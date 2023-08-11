@@ -1,0 +1,12 @@
+.pagination {
+  margin-top: 4rem;
+  .page-link {
+    color: $success;
+    border-radius: 0;
+    border-color: $success;
+    &.active {
+      background-color: $success;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.side-navbar {
+  position: fixed;
+  min-width: 296px;
+  min-height: 100vh;
+  .logo {
+    margin: 2rem;
+  }
+  .nav {
+    &-link {
+      padding: 12px 32px;
+      position: relative;
+      &.active {
+        color: $success;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 4px;
+          height: 32px;
+          border-left: 4px solid $success;
+        }
+      }
+    }
+  }
+}
