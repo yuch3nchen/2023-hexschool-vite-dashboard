@@ -418,7 +418,7 @@ $spacers: (
   2: $spacer * 0.5,
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3,
+  5: $spacer * 2,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -544,7 +544,7 @@ $border-color-translucent: rgba($black, 0.175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius: 0.375rem !default;
+$border-radius: 0.125rem !default;
 $border-radius-sm: 0.25rem !default;
 $border-radius-lg: 0.5rem !default;
 $border-radius-xl: 1rem !default;
@@ -616,6 +616,7 @@ $font-family-code: var(--#{$prefix}font-monospace) !default;
 // $font-size-base affects the font size of the body text
 $font-size-root: null !default;
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-xs: $font-size-base * 0.75 !default;
 $font-size-sm: $font-size-base * 0.875 !default;
 $font-size-lg: $font-size-base * 1.25 !default;
 
@@ -649,6 +650,7 @@ $font-sizes: (
   4: $h4-font-size,
   5: $h5-font-size,
   6: $h6-font-size,
+  sub: $font-size-xs,
 ) !default;
 // scss-docs-end font-sizes
 
