@@ -1,7 +1,15 @@
+//Vendors
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp");
 
 //Configuration
+@import "../../node_modules/bootstrap/scss/functions";
+
+//Variables
+@import "./helpers/variables";
+@import "./helpers/variables-dark";
+
+//Bootstrap utils & Comp
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 //Base
@@ -11,6 +19,7 @@
 @import "./components/navbar";
 @import "./components/user-section";
 @import "./components/pagination";
+@import "./components/list-group";
 
-//Pages
-@import "./pages/main";
+//Layout
+@import "./layout/main";
